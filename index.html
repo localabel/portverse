@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poertofolio Resti Anjeli </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-slate-800 antialiased selection:bg-yellow-200">
+
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-amber-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-end items-center">
+            <button id="menu-btn" onclick="toggleMenu()" class="md:hidden text-slate-700 hover:text-amber-500 focus:outline-none transition">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm text-slate-600">
+                <a href="#welcome" class="hover:text-amber-500 transition">Beranda</a>
+                <a href="#about" class="hover:text-amber-500 transition">Tentang Saya</a>
+                <a href="#skills" class="hover:text-amber-500 transition">Keahlian</a>
+                <a href="#portfolio" class="hover:text-amber-500 transition">Proyek & Pengalaman</a>
+                <a href="#certificates" class="hover:text-amber-500 transition">Sertifikat & Penghargaan</a>
+                <a href="#contact" class="hover:text-amber-500 transition">Kontak</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-100 px-6 py-4 space-y-3 font-semibold text-sm text-slate-600 fade-in">
+            <a href="#welcome" onclick="toggleMenu()" class="block hover:text-amber-500 transition">Beranda</a>
+            <a href="#about" onclick="toggleMenu()" class="block hover:text-amber-500 transition">Tentang Saya</a>
+            <a href="#skills" onclick="toggleMenu()" class="block hover:text-amber-500 transition">Keahlian</a>
+            <a href="#portfolio" onclick="toggleMenu()" class="block hover:text-amber-500 transition">Proyek & Pengalaman</a>
+            <a href="#certificates" onclick="toggleMenu()" class="block hover:text-amber-500 transition">Sertifikat & Penghargaan</a>
+            <a href="#contact" onclick="toggleMenu()" class="block hover:text-amber-500 transition">Kontak</a>
+        </div>
+    </nav>
+
+    <section id="welcome" class="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-yellow-100 via-amber-50 to-orange-100 relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-40"></div>
+        <div class="absolute bottom-20 right-10 w-44 h-44 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-40"></div>
+        <div class="max-w-3xl mx-auto text-center px-6 z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight">
+                <div class="mb-3">Welcome To My</div>
+                <span class="bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent">Portfolio Journey</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed mb-8 max-w-2xl mx-auto font-medium">
+                "Bridging Human Psychology with Data and Tech"
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#about" class="px-5 py-2.5 sm:px-6 sm:py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-md hover:shadow-amber-200 transition-all transform hover:-translate-y-0.5 text-sm">
+                    Telusuri Profil!
+                </a>
+                <a href="#portfolio" class="px-5 py-2.5 sm:px-6 sm:py-3 bg-white hover:bg-slate-50 text-slate-700 font-bold rounded-xl border border-slate-200 shadow-sm transition-all transform hover:-translate-y-0.5 text-sm">
+                    Lihat Karya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+                        <img src="https://i.postimg.cc/cC0HQ4zp/Foto.png" alt="Foto Profil Resti Anjeli" class="relative rounded-3xl w-64 h-80 sm:w-72 sm:h-96 object-cover shadow-2xl transition duration-300">
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Tentang Saya</h3>
+                    <div class="h-1 w-16 bg-amber-500 rounded mb-6"></div>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-4 font-medium text-justify">
+                        Halo, saya Resti Anjeli. Sebagai lulusan Psikologi dengan pengalaman sebagai Tech Recruiter dan ketertarikan kuat pada dunia data, saya memiliki perspektif unik dalam melihat interaksi antara manusia, teknologi, dan bisnis.
+                    </p>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 font-medium text-justify">
+                        Latar belakang keilmuan saya membentuk menggabungkan empati riset psikologi dengan presisi analisis data. Baik itu menggali kebutuhan pengguna (UX Research), memetakan tren lewat angka (Data Analytics), maupun memahami kebutuhan talenta industri.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 border-t border-slate-100 pt-6">
+                        <div>
+                            <span class="block text-2xl font-bold text-amber-500">2+</span>
+                            <span class="text-xs sm:text-sm text-slate-500 font-bold">Magang Virtual</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-amber-500">3+</span>
+                            <span class="text-xs sm:text-sm text-slate-500 font-bold">Asisten Akademik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gradient-to-b from-white to-amber-50/40 border-t border-amber-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Keahlian Saya</h2>
+                <p class="text-slate-500 text-xs sm:text-sm font-medium">Teknologi dan keahlian profesional yang saya kuasai</p>
+                <div class="h-1 w-16 bg-amber-500 rounded mx-auto mt-4"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="p-2.5 bg-blue-50 text-blue-600 rounded-xl text-base"><i class="fa-solid fa-chart-pie"></i></span>
+                        <h3 class="font-bold text-slate-800 text-sm sm:text-base">Analisis Data</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">SQL</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Microsoft Excel</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Data Cleaning</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Big Data x BigQuery</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="p-2.5 bg-orange-50 text-orange-600 rounded-xl text-base"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        <h3 class="font-bold text-slate-800 text-sm sm:text-base">Visualisasi Data</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Looker Studio</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Pelaporan Data (Data Storytelling)</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Dashboard Visualisasi</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="p-2.5 bg-amber-50 text-amber-600 rounded-xl text-base"><i class="fa-solid fa-users-gear"></i></span>
+                        <h3 class="font-bold text-slate-800 text-sm sm:text-base">Talenta & Riset</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Tech Recruitment</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Skrining CV</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Talent Sourcing</span>
+                        <span class="px-2.5 py-1 bg-slate-50 text-slate-700 text-xs font-bold rounded-lg border border-slate-100">Riset Akademik</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-amber-50/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Proyek & Pengalaman Kerja</h2>
+                <p class="text-slate-500 text-xs sm:text-sm font-medium">Kombinasi karya teknis dan perjalanan profesional saya</p>
+                <div class="h-1 w-16 bg-amber-500 rounded mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div class="space-y-6">
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                        <span class="p-2 bg-yellow-200 text-yellow-800 rounded-lg text-xs"><i class="fa-solid fa-laptop-code"></i></span>
+                        Proyek Saya
+                    </h3>
+                    <div class="space-y-6">
+                        
+                        <div id="journal-card" onclick="toggleJournal()" class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 cursor-pointer hover:border-amber-400 hover:shadow-md transition duration-300 min-h-[180px] flex flex-col justify-between select-none">
+                            <div id="journal-main-content" class="space-y-2 fade-in">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <span class="text-[10px] sm:text-xs font-bold text-amber-600 uppercase tracking-wider block mb-1">Penelitian / Publikasi</span>
+                                        <h4 class="text-base sm:text-lg font-bold text-slate-900">Publikasi Jurnal Ilmiah</h4>
+                                    </div>
+                                    <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-down"></i></span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed text-justify">Meneliti and menyusun publikasi jurnal ilmiah terstruktur dengan metodologi valid. Klik kotak ini untuk melihat daftar jurnal.</p>
+                            </div>
+                            <div id="journal-links-content" class="hidden space-y-3 w-full fade-in">
+                                <div class="border-b border-slate-100 pb-2 flex justify-between items-center">
+                                    <span class="text-[10px] sm:text-xs font-bold text-amber-600 uppercase tracking-wider block">Tautan Jurnal</span>
+                                    <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-up"></i></span>
+                                </div>
+                                <div class="space-y-2 max-h-[140px] overflow-y-auto pr-1">
+                                    <a href="https://jurnal-rjb.com/index.php/prakarsa/article/view/65" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Jurnal Prakarsa (RJB) - Jurnal 1
+                                    </a>
+                                    <a href="https://ejournal.unma.ac.id/index.php/bernas/article/view/13306" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Jurnal Bernas UNMA - Jurnal 2
+                                    </a>
+                                    <a href="https://ejournal.unma.ac.id/index.php/bernas/article/view/16841" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Jurnal Bernas UNMA - Jurnal 3
+                                    </a>
+                                    <a href="https://www.digitalpress.gaes-edu.com/index.php/jpled/article/view/475" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Digital Press (JPLED) - Jurnal 4
+                                    </a>
+                                    <a href="https://www.researchgate.net/publication/392260609_Peran_Keluarga_Dalam_Pencegahan_Kekerasan_Pada_Anak_Studi_Kasus_Di_Pekanbaru" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> ResearchGate: Peran Keluarga
+                                    </a>
+                                    <div class="flex items-center gap-2 text-xs font-bold text-slate-500 pt-1 select-none">
+                                        <i class="fa-solid fa-ellipsis-stroke text-[9px] text-amber-500 animate-pulse"></i> Riset and publish journal on going
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="web-project-card" onclick="toggleWebProjects()" class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 cursor-pointer hover:border-orange-400 hover:shadow-md transition duration-300 min-h-[180px] flex flex-col justify-between select-none">
+                            <div id="web-main-content" class="space-y-2 fade-in">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <span class="text-[10px] sm:text-xs font-bold text-orange-600 uppercase tracking-wider block mb-1">Pengembangan Web</span>
+                                        <h4 class="text-base sm:text-lg font-bold text-slate-900">Basic Web</h4>
+                                    </div>
+                                    <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-down"></i></span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed text-justify">Mengembangkan basic platform web responsif yang interaktif, mudah digunakan, dan dirancang dengan estetika modern. Klik kotak ini untuk melihat daftar link web.</p>
+                            </div>
+                            <div id="web-links-content" class="hidden space-y-3 w-full fade-in">
+                                <div class="border-b border-slate-100 pb-2 flex justify-between items-center">
+                                    <span class="text-[10px] sm:text-xs font-bold text-orange-600 uppercase tracking-wider block">Tautan Website</span>
+                                    <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-up"></i></span>
+                                </div>
+                                <div class="space-y-2 max-h-[140px] overflow-y-auto pr-1">
+                                    <a href="https://localabel.github.io/desain.e-cardsastra/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-orange-600 hover:text-orange-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> E-Card Sastra
+                                    </a>
+                                    <a href="https://localabel.github.io/sastra.e-card/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-orange-600 hover:text-orange-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Sastra E-Card
+                                    </a>
+                                    <a href="https://localabel.github.io/rimbun/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-orange-600 hover:text-orange-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Rimbun
+                                    </a>
+                                    <a href="https://localabel.github.io/rumahijau.idn/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-orange-600 hover:text-orange-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Rumahijau IDN
+                                    </a>
+                                    <a href="https://flowlocalzen.github.io/testintelegensi.id/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-orange-600 hover:text-orange-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Tes Inteligensi / Psikometri
+                                    </a>
+                                    <a href="https://localabel.github.io/madani.id/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs font-bold text-orange-600 hover:text-orange-700 hover:underline transition">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Madani ID
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="dashboard-card" onclick="toggleDashboard()" class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 cursor-pointer hover:border-blue-400 hover:shadow-md transition duration-300 min-h-[180px] flex flex-col justify-between select-none">
+                            <div id="dashboard-main-content" class="space-y-2 fade-in">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wider block mb-1">Data Analytics</span>
+                                        <h4 class="text-base sm:text-lg font-bold text-slate-900">Dashboard Visualisasi Project</h4>
+                                    </div>
+                                    <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-down"></i></span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed text-justify">Mentransformasikan data mentah menjadi wawasan bisnis yang interaktif. Klik kotak ini untuk membuka daftar link proyek saya.</p>
+                            </div>
+                            <div id="dashboard-links-content" class="hidden space-y-3 w-full fade-in">
+                                <div class="border-b border-slate-100 pb-2 flex justify-between items-center">
+                                    <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wider block">Tautan Dashboard</span>
+                                    <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-up"></i></span>
+                                </div>
+                                <div class="space-y-2 font-bold">
+                                    <a href="https://localabel.github.io/Kimia-Farma-BDA/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs text-blue-600 hover:text-blue-700 hover:underline transition">
+                                        <i class="fa-solid fa-chart-column text-[9px]"></i> Kimia Farma x Rakamin Academy
+                                    </a>
+                                    <a href="https://localabel.github.io/credit-card-report/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs text-blue-600 hover:text-blue-700 hover:underline transition">
+                                        <i class="fa-solid fa-chart-column text-[9px]"></i> MySkill E-Learning
+                                    </a>
+                                    <a href="https://datastudio.google.com/reporting/ba85fe2a-c32b-4bdf-b830-c12a4f30eb19" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs text-blue-600 hover:text-blue-700 hover:underline transition">
+                                        <i class="fa-solid fa-chart-column text-[9px]"></i> Looker Studio Dashboard - Proyek 1
+                                    </a>
+                                    <a href="https://datastudio.google.com/reporting/68cf9efc-7ee0-464c-a42f-4c4aab6d37a2" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs text-blue-600 hover:text-blue-700 hover:underline transition">
+                                        <i class="fa-solid fa-chart-column text-[9px]"></i> Looker Studio Dashboard - Proyek 2
+                                    </a>
+                                    <a href="https://datastudio.google.com/reporting/8eff768d-4ca6-4fb5-85cf-fa7fa79d2ac4" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs text-blue-600 hover:text-blue-700 hover:underline transition">
+                                        <i class="fa-solid fa-chart-column text-[9px]"></i> Looker Studio Dashboard - Proyek 3
+                                    </a>
+                                    <div class="flex items-center gap-2 text-xs font-bold text-slate-500 pt-1 select-none">
+                                        <i class="fa-solid fa-circle-notch text-[9px] text-blue-500 animate-spin"></i> project on going
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                        <span class="p-2 bg-amber-200 text-amber-800 rounded-lg text-xs"><i class="fa-solid fa-briefcase"></i></span>
+                        Pengalaman Kerja
+                    </h3>
+                    <div class="relative border-l-2 border-amber-200 pl-6 space-y-8 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1 bg-amber-500 w-4 h-4 rounded-full border-4 border-white"></div>
+                            <span class="text-xs font-bold text-slate-400 block mb-1">Akademik | Desember 2022 - Mei 2026</span>
+                            <h4 class="text-sm sm:text-base font-bold text-slate-900">Asisten Dosen</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1 font-medium text-justify">Membantu dosen dalam proses belajar mengajar, memberikan asistensi materi, serta mengevaluasi tugas mahasiswa.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1 bg-amber-500 w-4 h-4 rounded-full border-4 border-white"></div>
+                            <span class="text-xs font-bold text-slate-400 block mb-1">Riset | Februari 2023 - Mei 2026</span>
+                            <h4 class="text-sm sm:text-base font-bold text-slate-900">Asisten Penelitian</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1 font-medium text-justify">Berkontribusi aktif dalam pengumpulan data lapangan, literatur review, serta pengolahan data statistik untuk riset.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1 bg-orange-400 w-4 h-4 rounded-full border-4 border-white"></div>
+                            <span class="text-xs font-bold text-orange-500 block mb-1">Kimia Farma x Rakamin Academy | 2 Maret 2026 - 10 April 2026</span>
+                            <h4 class="text-sm sm:text-base font-bold text-slate-900">Magang Virtual: Big Data Analyst</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1 font-medium text-justify">Menganalisis dataset berskala besar untuk kebutuhan bisnis, melakukan pembersihan data (*data cleaning*), serta menyajikan visualisasi data yang solutif.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1 bg-yellow-500 w-4 h-4 rounded-full border-4 border-white"></div>
+                            <span class="text-xs font-bold text-yellow-600 block mb-1">Rakamin Academy | 4 Mei 2026 - 1 Juni 2026</span>
+                            <h4 class="text-sm sm:text-base font-bold text-slate-900">Magang Virtual: Tech Recruiter</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-1 font-medium text-justify">Mempelajari siklus perekrutan di industri teknologi, penyaringan kandidat (*screening CV*), serta strategi *talent sourcing* yang efektif.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-24 bg-white border-t border-amber-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Sertifikat & Penghargaan</h2>
+                <p class="text-slate-500 text-xs sm:text-sm font-medium">Validasi kompetensi profesional dan apresiasi pencapaian saya</p>
+                <div class="h-1 w-16 bg-amber-500 rounded mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                        <span class="p-2 bg-amber-100 text-amber-800 rounded-lg text-xs"><i class="fa-solid fa-graduation-cap"></i></span>
+                        Sertifikasi & Kursus
+                    </h3>
+                    <div class="space-y-4">
+                        <div onclick="openDriveCertificate('big_data')" class="bg-amber-50/40 p-5 rounded-2xl border border-amber-100 hover:border-amber-400 hover:bg-white hover:shadow-md transition duration-300 flex items-start gap-4 cursor-pointer select-none group">
+                            <div class="p-2.5 bg-orange-100 text-orange-600 rounded-xl text-base mt-0.5 group-hover:bg-orange-500 group-hover:text-white transition">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold text-orange-600 uppercase tracking-wider block mb-0.5">Big Data Analyst</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition">Virtual Internship Certificate</h4>
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">Kimia Farma x Rakamin Academy</p>
+                                <p class="text-xs text-slate-600 font-medium leading-relaxed text-justify">Pelatihan intensif big data, SQL, dan dashboard interaktif (Skor: 89.33).</p>
+                            </div>
+                        </div>
+
+                        <div onclick="openDriveCertificate('tech_recruiter')" class="bg-amber-50/40 p-5 rounded-2xl border border-amber-100 hover:border-amber-400 hover:bg-white hover:shadow-md transition duration-300 flex items-start gap-4 cursor-pointer select-none group">
+                            <div class="p-2.5 bg-yellow-100 text-yellow-700 rounded-xl text-base mt-0.5 group-hover:bg-yellow-500 group-hover:text-white transition">
+                                <i class="fa-solid fa-id-card-clip"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold text-yellow-600 uppercase tracking-wider block mb-0.5">Tech Recruiter</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition">Virtual Internship Certificate</h4>
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">Rakamin Academy</p>
+                                <p class="text-xs text-slate-600 font-medium leading-relaxed text-justify">Alur rekrutmen teknologi, screening CV, dan sourcing strategi (Skor: 85.78).</p>
+                            </div>
+                        </div>
+
+                        <div onclick="openDriveCertificate('hr_myskill')" class="bg-amber-50/40 p-5 rounded-2xl border border-amber-100 hover:border-amber-400 hover:bg-white hover:shadow-md transition duration-300 flex items-start gap-4 cursor-pointer select-none group">
+                            <div class="p-2.5 bg-blue-100 text-blue-600 rounded-xl text-base mt-0.5 group-hover:bg-blue-500 group-hover:text-white transition">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-wider block mb-0.5">Human Resource</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition">Course Completion Certificate</h4>
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">MySkill - Employee Life Cycle Management</p>
+                                <p class="text-xs text-slate-600 font-medium leading-relaxed text-justify">Pemahaman dasar fundamental siklus pengelolaan karyawan dari rekrutmen hingga offboarding.</p>
+                            </div>
+                        </div>
+
+                        <div onclick="openDriveCertificate('excel_myskill')" class="bg-amber-50/40 p-5 rounded-2xl border border-amber-100 hover:border-amber-400 hover:bg-white hover:shadow-md transition duration-300 flex items-start gap-4 cursor-pointer select-none group">
+                            <div class="p-2.5 bg-green-100 text-green-600 rounded-xl text-base mt-0.5 group-hover:bg-green-500 group-hover:text-white transition">
+                                <i class="fa-solid fa-file-excel"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold text-green-600 uppercase tracking-wider block mb-0.5">Microsoft Excel</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition">Course Completion Certificate</h4>
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">MySkill - Data Cleansing, Sort & Filter</p>
+                                <p class="text-xs text-slate-600 font-medium leading-relaxed text-justify">Validasi keahlian praktis fungsi Microsoft Excel untuk pembersihan data, sorting, dan filtering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                        <span class="p-2 bg-orange-100 text-orange-800 rounded-lg text-xs"><i class="fa-solid fa-trophy"></i></span>
+                        Penghargaan & Apresiasi
+                    </h3>
+                    <div class="space-y-4">
+                        <div onclick="openDriveCertificate('bec_essay')" class="bg-amber-50/40 p-5 rounded-2xl border border-amber-100 hover:border-amber-400 hover:bg-white hover:shadow-md transition duration-300 flex items-start gap-4 cursor-pointer select-none group">
+                            <div class="p-2.5 bg-amber-100 text-amber-600 rounded-xl text-base mt-0.5 group-hover:bg-amber-500 group-hover:text-white transition">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold text-amber-600 uppercase tracking-wider block mb-0.5">Karya Ilmiah & Esai</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition">Bronze Medalist</h4>
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">Bandung Essay Competition (BEC) 2 • 2025</p>
+                                <p class="text-xs text-slate-600 font-medium leading-relaxed text-justify">Meraih medali perunggu tingkat nasional yang diselenggarakan oleh Politeknik TEDC Bandung berkolaborasi dengan Ruang Inovasi Sains dan Karya Ilmiah (RISKI).</p>
+                            </div>
+                        </div>
+
+                        <div onclick="openDriveCertificate('ipcom_essay')" class="bg-amber-50/40 p-5 rounded-2xl border border-amber-100 hover:border-amber-400 hover:bg-white hover:shadow-md transition duration-300 flex items-start gap-4 cursor-pointer select-none group">
+                            <div class="p-2.5 bg-orange-100 text-orange-600 rounded-xl text-base mt-0.5 group-hover:bg-orange-500 group-hover:text-white transition">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold text-orange-600 uppercase tracking-wider block mb-0.5">Kompetisi Psikologi</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition">Juara 2 Psy - Esai Kelompok</h4>
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">Islamic Psychology Competition (IPCOM) V • 2024</p>
+                                <p class="text-xs text-slate-600 font-medium leading-relaxed text-justify">Meraih Juara 2 dalam ajang nasional yang diselenggarakan oleh Islamic Psychology Competition (IPCOM) V.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-white py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3 tracking-tight">Let's Connect & Work Together!</h2>
+            <p class="text-slate-400 mb-8 max-w-md mx-auto text-xs sm:text-sm leading-relaxed font-medium">
+                Tertarik untuk berkolaborasi atau sekadar berdiskusi seru? Hubungi saya lewat platform di bawah ini ya!
+            </p>
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://www.linkedin.com/in/resti-anjeli-43897b22b/" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-300 hover:bg-amber-500 hover:text-white transition-all transform hover:-translate-y-1 shadow-md">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/restianjels?igsh=MTJtc3dqcG5pdGwzbw%3D%3D&utm_source=qr" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-300 hover:bg-amber-500 hover:text-white transition-all transform hover:-translate-y-1 shadow-md">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/localabel" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-300 hover:bg-amber-500 hover:text-white transition-all transform hover:-translate-y-1 shadow-md">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:restianjeli.id@gmail.com" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-300 hover:bg-amber-500 hover:text-white transition-all transform hover:-translate-y-1 shadow-md">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex justify-center items-center text-xs text-slate-500 font-semibold">
+                <p>&copy; 2026 Resti Anjeli. Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const driveLinks = {
+            excel_myskill: 'https://drive.google.com/file/d/1Iz00yWnoAObcc20kNyl3_jTJHqfKIW0c/view?usp=sharing',
+            hr_myskill: 'https://drive.google.com/file/d/1j0Tt2EOSBBA_gs-fuT3FCQBXo6eNUX6J/view?usp=sharing',
+            tech_recruiter: 'https://drive.google.com/file/d/1NWOc9oQ5RGtl2ukJiYZAK7AIDdSjpv-a/view?usp=sharing',
+            big_data: 'https://drive.google.com/file/d/1EnVA_w726x2S95nhRoywdERRZvelZU_c/view?usp=sharing',
+            ipcom_essay: 'https://drive.google.com/file/d/1itmUyrAnchZx3ra1wJRnDIPBgLR0t6Gp/view?usp=sharing',
+            bec_essay: 'https://drive.google.com/file/d/1p7qhdeWN6FAYrEP0MtcKtI2K0Vl-33_5/view?usp=sharing'
+        };
+
+        function openDriveCertificate(key) {
+            const url = driveLinks[key];
+            if (url) {
+                window.open(url, '_blank');
+            } else {
+                alert('Tautan sertifikat belum dimasukkan ke dalam kode atau belum siap!');
+            }
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function toggleJournal() {
+            const mainContent = document.getElementById('journal-main-content');
+            const linksContent = document.getElementById('journal-links-content');
+            const card = document.getElementById('journal-card');
+            
+            if(linksContent.classList.contains('hidden')) {
+                linksContent.classList.remove('hidden');
+                mainContent.classList.add('hidden');
+                card.classList.add('border-amber-400', 'shadow-md');
+            } else {
+                linksContent.classList.add('hidden');
+                mainContent.classList.remove('hidden');
+                card.classList.remove('border-amber-400', 'shadow-md');
+            }
+        }
+
+        function toggleWebProjects() {
+            const mainContent = document.getElementById('web-main-content');
+            const linksContent = document.getElementById('web-links-content');
+            const card = document.getElementById('web-project-card');
+            
+            if(linksContent.classList.contains('hidden')) {
+                linksContent.classList.remove('hidden');
+                mainContent.classList.add('hidden');
+                card.classList.add('border-orange-400', 'shadow-md');
+            } else {
+                linksContent.classList.add('hidden');
+                mainContent.classList.remove('hidden');
+                card.classList.remove('border-orange-400', 'shadow-md');
+            }
+        }
+
+        function toggleDashboard() {
+            const mainContent = document.getElementById('dashboard-main-content');
+            const linksContent = document.getElementById('dashboard-links-content');
+            const card = document.getElementById('dashboard-card');
+            
+            if(linksContent.classList.contains('hidden')) {
+                linksContent.classList.remove('hidden');
+                mainContent.classList.add('hidden');
+                card.classList.add('border-blue-400', 'shadow-md');
+            } else {
+                linksContent.classList.add('hidden');
+                mainContent.classList.remove('hidden');
+                card.classList.remove('border-blue-400', 'shadow-md');
+            }
+        }
+    </script>
+</body>
+</html>
