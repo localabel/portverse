@@ -76,15 +76,14 @@
                 <div class="md:col-span-5 flex justify-center">
                     <div class="relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
-                        <!-- BARIS KODE FOTO DI BAWAH INI SUDAH MENGGUNAKAN RELATIVE PATH UNTUK GITHUB -->
-                        <img src="./Foto.png" alt="Foto Profil Resti Anjeli" class="relative rounded-3xl w-64 h-80 sm:w-72 sm:h-96 object-cover shadow-2xl transition duration-300">
+                        <img src="Foto.png" alt="Foto Profil Resti Anjeli" class="relative rounded-3xl w-64 h-80 sm:w-72 sm:h-96 object-cover shadow-2xl transition duration-300">
                     </div>
                 </div>
                 <div class="md:col-span-7">
                     <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Tentang Saya</h3>
                     <div class="h-1 w-16 bg-amber-500 rounded mb-6"></div>
                     <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-4 font-medium text-justify">
-                        Halo, saya Resti Anjeli. Sebagai lulusan Psikologi dengan pengalamaan sebagai Tech Recruiter dan ketertarikan kuat pada dunia data, saya memiliki perspektif unik dalam melihat interaksi antara manusia, teknologi, dan bisnis.
+                        Halo, saya Resti Anjeli. Sebagai lulusan Psikologi dengan pengalaman sebagai Tech Recruiter dan ketertarikan kuat pada dunia data, saya memiliki perspektif unik dalam melihat interaksi antara manusia, teknologi, dan bisnis.
                     </p>
                     <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 font-medium text-justify">
                         Latar belakang keilmuan saya membentuk menggabungkan empati riset psikologi dengan presisi analisis data. Baik itu menggali kebutuhan pengguna (UX Research), memetakan tren lewat angka (Data Analytics), maupun memahami kebutuhan talenta industri.
@@ -96,7 +95,7 @@
                         </div>
                         <div>
                             <span class="block text-2xl font-bold text-amber-500">3+</span>
-                            <span class="text-xs sm:text-sm text-slate-500 font-bold">Asisten Akademik</span>
+                            <span class="text-xs sm:text-sm text-slate-500 font-bold">Asisten Academic</span>
                         </div>
                     </div>
                 </div>
@@ -245,6 +244,7 @@
                             </div>
                         </div>
 
+                        <!-- KOTAK DASHBOARD YANG SUDAH DIOPTIMALKAN GAMBARNYA AGAR BESAR -->
                         <div id="dashboard-card" onclick="toggleDashboard()" class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 cursor-pointer hover:border-blue-400 hover:shadow-md transition duration-300 min-h-[180px] flex flex-col justify-between select-none">
                             <div id="dashboard-main-content" class="space-y-2 fade-in">
                                 <div class="flex justify-between items-start">
@@ -254,14 +254,15 @@
                                     </div>
                                     <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-down"></i></span>
                                 </div>
-                                <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed text-justify">Mentransformasikan data mentah menjadi wawasan bisnis yang interaktif. Klik kotak ini untuk membuka daftar link proyek saya.</p>
+                                <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed text-justify">Mentransformasikan data mentah menjadi wawasan bisnis yang interaktif. Klik kotak ini untuk membuka daftar link dan screenshot proyek saya.</p>
                             </div>
-                            <div id="dashboard-links-content" class="hidden space-y-3 w-full fade-in">
+                            <div id="dashboard-links-content" class="hidden space-y-4 w-full fade-in">
                                 <div class="border-b border-slate-100 pb-2 flex justify-between items-center">
-                                    <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wider block">Tautan Dashboard</span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wider block">Tautan & Screenshot Dashboard</span>
                                     <span class="text-slate-400 text-xs"><i class="fa-solid fa-chevron-up"></i></span>
                                 </div>
-                                <div class="space-y-2 font-bold">
+                                
+                                <div class="space-y-2 font-bold border-b border-slate-100 pb-3">
                                     <a href="https://localabel.github.io/Kimia-Farma-BDA/" target="_blank" onclick="event.stopPropagation();" class="flex items-center gap-2 text-xs text-blue-600 hover:text-blue-700 hover:underline transition">
                                         <i class="fa-solid fa-chart-column text-[9px]"></i> Kimia Farma x Rakamin Academy
                                     </a>
@@ -279,6 +280,22 @@
                                     </a>
                                     <div class="flex items-center gap-2 text-xs font-bold text-slate-500 pt-1 select-none">
                                         <i class="fa-solid fa-circle-notch text-[9px] text-blue-500 animate-spin"></i> project on going
+                                    </div>
+                                </div>
+
+                                <!-- Bagian Gambar yang Diperbesar tanpa batas Scroll Box ketat -->
+                                <div class="space-y-4 pt-2" onclick="event.stopPropagation();">
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Pratinjau Dashboard:</span>
+                                    <div class="space-y-4">
+                                        <div class="border border-slate-100 rounded-xl overflow-hidden shadow-sm bg-slate-50">
+                                            <img src="Dashboard 1.jpg" alt="Performance Analytics Kimia Farma" class="w-full h-auto object-contain hover:scale-[1.02] transition duration-300">
+                                        </div>
+                                        <div class="border border-slate-100 rounded-xl overflow-hidden shadow-sm bg-slate-50">
+                                            <img src="Dashboard 2.jpg" alt="Myskill Credit Card Report" class="w-full h-auto object-contain hover:scale-[1.02] transition duration-300">
+                                        </div>
+                                        <div class="border border-slate-100 rounded-xl overflow-hidden shadow-sm bg-slate-50">
+                                            <img src="Dashboard 3.jpg" alt="Food and Beverage Menu Sales Analysis" class="w-full h-auto object-contain hover:scale-[1.02] transition duration-300">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
